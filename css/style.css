@@ -18,7 +18,7 @@ body {
   font-weight: 400;
 }
 body.hidden-scrolling {
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 .marquee_text {
   font-size: 20px;
@@ -31,6 +31,9 @@ body.hidden-scrolling {
 }
 .school_logo {
   height: 100px;
+}
+.school_name {
+  padding: 5px;
 }
 
 .container {
@@ -46,11 +49,9 @@ a {
 }
 /*header*/
 .header {
-  position: absolute;
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 99;
   padding: 15px;
 }
 .header-main {
@@ -133,6 +134,24 @@ a {
   opacity: 0;
   visibility: hidden;
 }
+.mission_vision {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.mission_vision H1 {
+  text-align: center;
+}
+.mission_vision_paragraph {
+  font-size: 18px;
+  /* text-align: justify; */
+}
+
+footer {
+  background-color: hsl(219, 9%, 45%);
+}
+
+/********************************8MEDIA QUERY START HERE*/
 @media (min-width: 992px) {
   .header .menu > .menu-item-has-children:hover > .sub-menu {
     transform: translateY(0);
@@ -215,16 +234,12 @@ a {
 
 /*home section*/
 .home-section {
-  width: 100%;
+  /* width: 100%;
   display: block;
   min-height: 100vh;
   background-image: url("../img/home.jpg");
   background-position: center top;
-  background-size: cover;
-}
-
-footer {
-  background-color: hsl(219, 9%, 45%);
+  background-size: cover; */
 }
 
 /* responsive */
