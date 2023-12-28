@@ -3,39 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Pride Academy College</title>
- 
   </head>
   <body>
     <style>
-        .carousel-indicators img{
-            width: 70px;
-            display: block;
-        }
-        .carousel-indicators button{
-            width: max-content!important;
-        }
-        .carousel-indicators{
-            position: unset;
-        }
+      .carousel-indicators img {
+        width: 70px;
+        display: block;
+      }
+      .carousel-indicators button {
+        width: max-content !important;
+      }
+      .carousel-indicators {
+        position: unset;
+      }
     </style>
     <!-- header start -->
     <header class="header">
-         <marquee behavior="" direction=""> <p class="marquee_text"></p>Welcome to Pride Academy College: Nurturing For Excellence</marquee>
+      <marquee behavior="" direction="" scrollamount="18px">
+        <p class="marquee_text">
+          Welcome to Pride Academy College: Nurturing For Excellence
+        </p></marquee
+      >
       <div class="container">
         <div class="header-main">
-                     <div class="logo">
-                        <div>
-                            <a href="index.php"><img src="images/school_logo.png" alt="" class="school_logo"></a>
-                        </div>
-                            <div class="school_name">
-                                    <p>Pride <br> Academy <br>College</p>
-                            </div>
-                    </div>
+          <div class="logo">
+            <div>
+              <a href="index.php"
+                ><img src="images/school_logo.png" alt="" class="school_logo"
+              /></a>
+            </div>
+            <div class="school_name">
+              <p>
+                Pride <br />
+                Academy <br />College
+              </p>
+            </div>
+          </div>
           <div class="open-nav-menu">
-            <span></span>
+            <img src="images/icon-hamburger.svg" alt="" />
+            <p class="menu_title">Menu</p>
           </div>
           <div class="menu-overlay"></div>
           <!-- navigation menu start -->
@@ -54,14 +66,14 @@
                 </ul>
               </li>
               <li class="menu-item">
-                <a href="#">About</a>
+                <a href="#">About Us</a>
               </li>
               <li class="menu-item">
                 <a href="#">Admission</a>
               </li>
               <li class="menu-item menu-item-has-children">
                 <a href="#" data-toggle="sub-menu"
-                  >Pages <i class="plus"></i
+                  >Payments <i class="plus"></i
                 ></a>
                 <ul class="sub-menu">
                   <li class="menu-item"><a href="#">page 1</a></li>
@@ -85,139 +97,219 @@
     <!-- header end -->
     <!-- carousel displaying school images and events start here-->
 
-        <div class="carousel slide" 
-        id="carouselDemo"
-        data-bs-wrap="true" 
-        data-bs-ride="carousel">
-
-    <div class="carousel-inner">
-
+    <div
+      class="carousel slide"
+      id="carouselDemo"
+      data-bs-wrap="true"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="images/school_environment.jpg" class="w-100">
-            <div class="carousel-caption">
-                <h5>Title Slide 0</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nemo?
-                </p>
-            </div>
+          <img src="images/school_environment.jpg" class="w-100" />
+          <div class="carousel-caption">
+            <p>Learning is never done without errors and defeat</p>
+            <h5>_Vladimir. Lenin</h5>
+          </div>
         </div>
 
-        <div class="carousel-item " 
-        data-bs-interval="2000">
-            <img src="images/our_teachers_cultural.jpg" class="w-100">
-            <div class="carousel-caption">
-                <h5>Title Slide 1</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nemo?
-                </p>
-            </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/school_front_view.jpg" class="w-100" />
+          <div class="carousel-caption">
+            <p>
+              The beautiful Thing about Learning is that no one can take it from
+              you
+            </p>
+            <h5>_B.B KING</h5>
+          </div>
         </div>
 
-        <div class="carousel-item ">
-            <img src="images/student_presenting.jpg" class="w-100">
-            <div class="carousel-caption">
-                <h5>Title Slide 2</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nemo?
-                </p>
-            </div>
+        <div class="carousel-item">
+          <img src="images/cultural_dance9.jpg" class="w-100" />
+          <div class="carousel-caption">
+            <p>
+              The wan who does not read books has no advantage over the one who
+              cannot read
+            </p>
+            <h5>_Mark Twain</h5>
+          </div>
         </div>
+        <div class="carousel-item">
+          <img src="images/cultural_dance9.jpg" class="w-100" />
+          <div class="carousel-caption">
+            <p>
+              Education is the passport to the future, for tomorrow belongs to
+              those who prepare for it.
+            </p>
+            <h5>_Malcom X.</h5>
+          </div>
+        </div>
+      </div>
 
-    </div>
-
-    <button class="carousel-control-prev" 
-    type="button"
-    data-bs-target="#carouselDemo" 
-    data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon"></span>
-    </button>
+      </button>
 
-    <button class="carousel-control-next"
-    type="button"
-    data-bs-target="#carouselDemo"
-    data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-</button>
-
-    <div class="carousel-indicators">
-        <button type="button" class="active"
-            data-bs-target="#carouselDemo"
-            data-bs-slide-to="0">
-            <img src="img1.jpg" />
-        </button>
-
-        <button type="button" 
+      <button
+        class="carousel-control-next"
+        type="button"
         data-bs-target="#carouselDemo"
-        data-bs-slide-to="1">
-            <img src="img2.jpg" />
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          class="active"
+          data-bs-target="#carouselDemo"
+          data-bs-slide-to="0"
+        >
+          <img src="images/.jpg" />
         </button>
 
-        <button type="button"
-        data-bs-target="#carouselDemo"
-        data-bs-slide-to="2">
-            <img src="img3.jpg" />
+        <button
+          type="button"
+          data-bs-target="#carouselDemo"
+          data-bs-slide-to="1"
+        >
+          <img src="img2.jpg" />
         </button>
+
+        <button
+          type="button"
+          data-bs-target="#carouselDemo"
+          data-bs-slide-to="2"
+        >
+          <img src="img3.jpg" />
+        </button>
+        <button
+          type="button"
+          class="active"
+          data-bs-target="#carouselDemo"
+          data-bs-slide-to="3"
+        >
+          <img src="images/.jpg" />
+        </button>
+      </div>
     </div>
-
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 
     <!-- carousel displaying school images and eventsends here -->
-
+    <!-- apply fro admission section start here -->
+    <div class="admission_container">
+      <div class="admission_student_picture">
+        <img
+          src="images/admission_apply.jpg"
+          alt=""
+          class="admission_human_picture"
+        />
+      </div>
+      <div class="admission_contents">
+        <h1 class="admission_title">Apply for Admission</h1>
+        <div class="admission_paragraph_div">
+          <p class="admission_paragraph">
+            We are one of the private schools in Ogun, Nigeria ; we provide a
+            well-rounded education that enables our students to develop vital
+            life skills and excel academically. Here is a summary of our
+            admission procedure.
+          </p>
+          <button class="apply_now_text">Apply Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- apply fro admission section ends here -->
     <div class="mission_vision">
-        <div class="mission">
-            <h1>Mission</h1>
-            <p class="mission_vision_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Laborum iusto quaerat dolore placeat odit deserunt quam quod tempora. 
-                 Est explicabo magnam animi. Molestias qui amet sunt architecto maxime ex aperiam.
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Laborum iusto quaerat dolore placeat odit deserunt quam quod tempora. 
-                 Est explicabo magnam animi. Molestias qui amet sunt architecto maxime ex aperiam.
-            </p>
-            
-        </div>
-        <div class="vision">
-            <h1>Vision</h1>
-            <p class="mission_vision_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum iusto quaerat dolore placeat odit deserunt quam quod tempora. 
-                Est explicabo magnam animi. Molestias qui amet sunt architecto maxime ex aperiam.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum iusto quaerat dolore placeat odit deserunt quam quod tempora. 
-                Est explicabo magnam animi. Molestias qui amet sunt architecto maxime ex aperiam.
-           </p>
-        </div>
-
+      <div class="mission">
+        <h1>Mission</h1>
+        <p class="mission_vision_paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto
+          quaerat dolore placeat odit deserunt quam quod tempora. Est explicabo
+          magnam animi. Molestias qui amet sunt architecto maxime ex aperiam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto
+          quaerat dolore placeat odit deserunt quam quod tempora. Est explicabo
+          magnam animi. Molestias qui amet sunt architecto maxime ex aperiam.
+        </p>
+      </div>
+      <div class="vision">
+        <h1>Vision</h1>
+        <p class="mission_vision_paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto
+          quaerat dolore placeat odit deserunt quam quod tempora. Est explicabo
+          magnam animi. Molestias qui amet sunt architecto maxime ex aperiam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto
+          quaerat dolore placeat odit deserunt quam quod tempora. Est explicabo
+          magnam animi. Molestias qui amet sunt architecto maxime ex aperiam.
+        </p>
+      </div>
     </div>
     <!-- footer start here -->
     <footer class="footer_section">
-        <div class="footer_contents">
-            <div class="footer_about">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-                  architecto! Voluptas quisquam ratione recusandae distinctio harum quae
-                  at perferendis voluptate, beatae voluptatibus minima libero? Numquam
-                  recusandae quisquam corporis quia fuga!
-                </p>
-              </div>
-              <div class="quick links">
-                
-              </div>
-              <div class="contact us">
-        
-              </div>
-              <d class="social_media">
-        
-              </div>
+      <div class="footer_contents">
+        <div class="footer_about">
+          <h1>About US</h1>
+          <p class="footer_about_text">
+            Pride Academy College is an award winning institution, where future
+            leaders are groomed. We offers first-class education from the
+            foundation stage to post-secondary levels. Our offers include
+            Crèche, Preschool, Elementary School, Secondary School and Sixth
+            Form.
+          </p>
         </div>
-        <div class="copy_right">
-            <p>Pride Academy College copyright 2024 All Right Reserved.</p>
-            <p class="develop"><a href="mailto:romualdadjimagbe2018@gmail.com">Built by Romualdtech</a></p>
+        <div class="quick_links">
+          <h1>Quick Link</h1>
+          <ul class="menu">
+            <li class="menu-item"><a href="#">Admission</a></li>
+            <li class="menu-item"><a href="#">Events & News</a></li>
+            <li class="menu-item"><a href="#">Payments</a></li>
+            <li class="menu-item"><a href="#"></a></li>
+          </ul>
         </div>
-     
-
+        <div class="contact_us">
+          <h1>Contact Us</h1>
+          <p>
+            <img src="images/address_location.svg" alt="" /> 4 Oladepo
+            Street,Rainbow Estate,Off Oremeta, Sango Otta, Nigeria.
+          </p>
+          <p><img src="images/phone-solid.svg" alt="" />: 0805 514 5287</p>
+          <img src="images/envelope-regular1.svg" alt="" />
+          info.school@prideacademycollege.com
+        </div>
+        <div class="social_media">
+          <h1>Follow Us On Social Media</h1>
+          <a href="https://web.facebook.com/PRIDEAcademySchoolOta/?_rdc=1&_rdr"
+            ><img src="images/facebook.svg" alt="facebook_logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/square-whatsapp.svg"
+              alt="whatsapp_logo"
+              class="social_img"
+          /></a>
+          <a href="#"><img src="images/twitter.svg" alt="twitter" /></a>
+          <a href="#"
+            ><img src="images/youtube.svg" alt="youtube" class="social_img"
+          /></a>
+          <a href="#"><img src="images/instagram.svg" alt="instagram" /></a>
+        </div>
+      </div>
+      <div class="copy_right">
+        <p>
+          Pride Academy College copyright
+          <img src="images/copyright-regular.svg" alt="" /> 2024 All Right
+          Reserved.
+        </p>
+        <p class="develop">
+          <a href="mailto:romualdadjimagbe2018@gmail.com" class="developer_name"
+            >Built by Romualdtech</a
+          >
+        </p>
+      </div>
     </footer>
-    
 
     <!-- footer start end here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>

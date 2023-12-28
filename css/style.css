@@ -21,8 +21,9 @@ body.hidden-scrolling {
   overflow-y: hidden;
 }
 .marquee_text {
-  font-size: 20px;
+  font-size: 24px;
   color: hsl(219, 9%, 45%);
+  font-weight: 900;
 }
 .logo {
   display: inline-flex;
@@ -59,7 +60,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   border-radius: 4px;
 }
 .header .logo {
@@ -83,10 +84,13 @@ a {
   display: block;
   padding: 12px 0;
   font-size: 16px;
-  color: #000000;
+  color: #fff;
   text-transform: capitalize;
   font-weight: 600;
   transition: all 0.3s ease;
+}
+.school_name {
+  color: #fff;
 }
 .header .menu > .menu-item > a .plus {
   display: inline-block;
@@ -134,23 +138,117 @@ a {
   opacity: 0;
   visibility: hidden;
 }
+.carousel-caption {
+  background-color: hsl(219, 9%, 45%);
+  /* width: 56%; */
+}
+.admission_container {
+  display: inline-flex;
+  border: 5px solid black;
+}
+.admission_human_picture {
+  height: 300px;
+}
+
+.admission_contents {
+  background-color: hsl(219, 9%, 45%);
+  padding: 30px;
+  color: hsl(0, 0%, 100%);
+
+  /* text-align: center; */
+}
+
+.admission_contents .admission_title {
+  /* font-size: 24px; */
+}
+.admission_paragraph_div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* display: flex; */
+}
+.admission_paragraph_div button {
+  padding: 0px 70px;
+  border: 5px solid black;
+}
+.apply_now_text {
+  /* padding: 10px 30px; */
+  /* font-size: 14px; */
+}
+.admission_paragraph {
+  padding-top: 10px;
+  font-size: 20px;
+  /* padding-top: 20px; */
+}
+.admission_paragraph_div button:hover {
+  background-color: hsl(220, 14%, 75%);
+  color: #fff;
+  /* color: ; */
+}
+
 .mission_vision {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  color: #fff;
 }
 .mission_vision H1 {
   text-align: center;
+}
+.mission,
+.vision {
+  background-color: hsl(219, 9%, 45%);
+  padding: 10px;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 .mission_vision_paragraph {
   font-size: 18px;
   /* text-align: justify; */
 }
 
-footer {
-  background-color: hsl(219, 9%, 45%);
+.footer_contents {
+  display: inline-flex;
 }
 
+footer {
+  background-color: hsl(219, 9%, 45%);
+  color: #fff;
+  padding: 10px;
+}
+footer h1 {
+  font-size: 24px;
+}
+footer .contact_us img {
+  height: 20px;
+}
+
+.footer_about_text,
+.quick_links a,
+.contact_us p {
+  font-size: 20px;
+}
+.footer_about,
+.quick_links,
+.contact_us,
+.social_media {
+  width: 25%;
+  padding-bottom: 30px;
+  /* font-size: 24px; */
+  margin: 10px;
+}
+.social_img {
+  height: 30px;
+}
+.quick_links .menu .menu-item {
+  color: #fff;
+}
+.copy_right {
+  display: flex;
+  justify-content: space-between;
+}
+.developer_name {
+  color: #fff;
+}
 /********************************8MEDIA QUERY START HERE*/
 @media (min-width: 992px) {
   .header .menu > .menu-item-has-children:hover > .sub-menu {
@@ -200,12 +298,15 @@ footer {
   background-color: #000000;
   box-sizing: border-box;
 }
-.header .open-nav-menu span:before {
+/* .header .open-nav-menu span:before {
   top: -7px;
 }
 .header .open-nav-menu span:after {
   top: 7px;
 }
+.open-nav-menu {
+  /* display: inline-flex; */
+/* } */
 .header .close-nav-menu {
   height: 40px;
   width: 40px;
@@ -230,6 +331,9 @@ footer {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease;
+}
+.carousel-item img {
+  /* height: 800px; */
 }
 
 /*home section*/
@@ -313,5 +417,49 @@ footer {
   .header .close-nav-menu,
   .header .open-nav-menu {
     display: flex;
+  }
+}
+
+@media (min-width: 767px) {
+  .open-nav-menu {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .open-nav-menu {
+    display: inline-flex;
+    padding: 5px;
+    border: 2px solid #fff;
+    display: none;
+  }
+
+  .menu_title {
+    color: #fff;
+    padding-left: 5px;
+  }
+  .admission_container,
+  .footer_contents,
+  .mission_vision {
+    display: inline-block;
+  }
+  .footer_about,
+  .quick_links,
+  .contact_us,
+  .social_media {
+    width: initial;
+  }
+  .copy_right {
+    display: inline-block;
+  }
+  footer {
+    text-align: center;
+  }
+  .admission_paragraph_div {
+    display: inline-block;
+  }
+}
+@media (max-width: 425px) {
+  .carousel-inner {
+    /* width: 100%; */
   }
 }
