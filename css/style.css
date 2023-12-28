@@ -60,7 +60,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px 0; */
+  padding: 10px 0;
   border-radius: 4px;
 }
 .header .logo {
@@ -298,15 +298,13 @@ footer .contact_us img {
   background-color: #000000;
   box-sizing: border-box;
 }
-/* .header .open-nav-menu span:before {
+.header .open-nav-menu span:before {
   top: -7px;
 }
 .header .open-nav-menu span:after {
   top: 7px;
 }
-.open-nav-menu {
-  /* display: inline-flex; */
-/* } */
+
 .header .close-nav-menu {
   height: 40px;
   width: 40px;
@@ -338,12 +336,12 @@ footer .contact_us img {
 
 /*home section*/
 .home-section {
-  /* width: 100%;
+  width: 100%;
   display: block;
   min-height: 100vh;
   background-image: url("../img/home.jpg");
   background-position: center top;
-  background-size: cover; */
+  background-size: cover;
 }
 
 /* responsive */
