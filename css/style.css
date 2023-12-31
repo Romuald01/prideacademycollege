@@ -456,4 +456,15 @@ footer .contact_us img {
   }
 }
 @media (max-width: 425px) {
+  .school_logo {
+    height: 50px;
+  }
+  .admission_paragraph,
+  .mission_vision_paragraph,
+  .footer_about_text,
+  .footer_about_text,
+  .quick_links a,
+  .contact_us p {
+    font-size: 16px;
+  }
 }
