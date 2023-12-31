@@ -411,7 +411,9 @@ footer .contact_us img {
   }
 }
 
-@media (min-width: 767px) {
+@media (max-width: 768px) {
+  .admission_human_picture {
+  }
 }
 @media (max-width: 767px) {
   .open-nav-menu {
@@ -420,6 +422,7 @@ footer .contact_us img {
     border: 2px solid #fff;
     /* display: none; */
   }
+
   .apply_now_text {
     padding: 10px 30px;
   }
@@ -439,6 +442,7 @@ footer .contact_us img {
   .social_media {
     width: 100%;
   }
+
   .copy_right {
     display: inline-block;
   }
