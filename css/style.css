@@ -202,6 +202,27 @@ a {
   /* text-align: justify; */
 }
 
+/* about us styling start here */
+.about_container {
+  background-image: url(../images/about-background.jpg);
+  height: 250px;
+  background-size: cover;
+}
+.about_text {
+  color: #fff;
+  border: 2px solid red;
+  padding: 10px;
+  font-weight: 900;
+  padding: 15px;
+}
+.school_history {
+  padding: 10px;
+  background-color: hsl(219, 9%, 45%);
+  color: #fff;
+  margin: ;
+}
+
+/* about us styling ends here */
 .footer_contents {
   display: inline-flex;
 }
@@ -251,6 +272,7 @@ footer .contact_us img {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+    z-index: 1000;
   }
   .header .menu > .menu-item-has-children:hover > a .plus:after {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -276,6 +298,7 @@ footer .contact_us img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 1000;
 }
 .header .open-nav-menu span {
   display: block;
