@@ -54,6 +54,7 @@ a {
   left: 0;
   top: 0;
   padding: 15px;
+  border: 2px solid red;
 }
 .header-main {
   background-color: hsl(219, 9%, 45%);
@@ -210,11 +211,13 @@ a {
 }
 .about_text {
   color: #fff;
-  border: 2px solid red;
+  border-bottom: 5px solid red;
   padding: 10px;
   font-weight: 900;
   padding: 15px;
+  width: 300px;
 }
+
 .school_history {
   padding: 10px;
   background-color: hsl(219, 9%, 45%);
@@ -266,6 +269,55 @@ footer .contact_us img {
 .developer_name {
   color: #fff;
 }
+/* .contact styling */
+
+.contact_form_container,
+.mail_form {
+  display: inline-flex;
+}
+.mail_form_container {
+  width: 80%;
+  border: 2px solid red;
+}
+.adresses {
+  width: 20%;
+}
+.mail_form input {
+  padding: 10px;
+  margin: 10px;
+}
+.mail_form input[type="text"],
+.mail_form input[type="email"],
+.mail_form input[type="phone"],
+textarea {
+  width: 100%;
+}
+textarea {
+  /* margin-right: -5px; */
+}
+.first_side_section,
+.second_side_section {
+  width: 50%;
+  padding: 10px;
+}
+
+.mail_form input[type="submit"] {
+  padding: 10px 30px;
+  background-color: hsl(219, 9%, 45%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.mail_form input[type="submit"]:hover {
+  color: hsl(219, 9%, 45%);
+  background-color: #fff;
+}
+.mail_form input::placeholder {
+  color: hsl(219, 9%, 45%);
+  font-weight: 700;
+  font-size: 18px;
+}
+
 /********************************8MEDIA QUERY START HERE*/
 @media (min-width: 992px) {
   .header .menu > .menu-item-has-children:hover > .sub-menu {
@@ -433,9 +485,14 @@ footer .contact_us img {
     display: flex;
   }
 }
-
+@media (min-width: 768px) {
+  .mobile_contact_form_submit_2 {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
-  .admission_human_picture {
+  .about_container {
+    height: 130px;
   }
 }
 @media (max-width: 767px) {
@@ -444,6 +501,38 @@ footer .contact_us img {
     padding: 5px;
     border: 2px solid #fff;
     /* display: none; */
+  }
+  .mobile_contact_form_submit_1 {
+    display: none;
+  }
+  .mobile_contact_form_submit_2 {
+    display: block;
+  }
+  .contact_form_container,
+  .mail_form {
+    display: inline-block;
+  }
+  .mail_form_container,
+  .adresses {
+    width: 100%;
+  }
+  .mail_form input {
+    padding: 10px;
+    margin: 10px;
+  }
+  .mail_form input[type="text"],
+  .mail_form input[type="email"],
+  .mail_form input[type="phone"],
+  textarea {
+    width: 100%;
+  }
+  textarea {
+    /* margin-right: -5px; */
+  }
+  .first_side_section,
+  .second_side_section {
+    width: 100%;
+    padding: 10px;
   }
 
   .apply_now_text {
